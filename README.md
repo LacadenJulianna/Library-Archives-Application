@@ -26,25 +26,42 @@ The **Library Archives Application** is a Java-based system designed to manage a
 ## 🗂️ Project Structure
 library_archive_application/
 │
-├── res/
-│ ├── book_test.csv, .txt → Sample book data
-│ └── teambach.sql → Database schema
+├── .idea/                          # IDE configuration files
+│
+├── res/                            # Resource files
+│   ├── .gitkeep                    # Placeholder for empty directory
+│   ├── book_test.csv               # Sample book data in CSV
+│   ├── book_test.txt               # Sample book data in text format
+│   └── teambach.sql                # SQL script for database schema
 │
 ├── src/
-│ ├── databaseConnection/ → Handles DB connections
+│   ├── databaseConnection/         # Database connectivity classes
 │
-│ ├── guest/
-│ │ ├── model/ → Guest-side logic (voting, browsing)
-│ │ └── view/ → Guest GUI components
+│   ├── guest/                      # Guest user module
+│   │   ├── model/                  # Guest logic (viewing, voting)
+│   │   │   ├── GuestBookCatalogModel.java
+│   │   │   ├── GuestDashboardModel.java
+│   │   │   ├── RateManagerModel.java
+│   │   │   └── VoteSelectionModel.java
+│   │   └── view/                   # Guest GUI components
 │
-│ ├── personnel/
-│ │ ├── model/ → Admin-side logic (CRUD, competitions)
-│ │ └── view/ → Admin GUI components
+│   ├── login/                      # Login module
 │
-│ ├── login/ → Login system logic/UI
-│ └── utilities/ → Shared utility functions
+│   ├── personnel/                  # Admin (personnel) module
+│   │   ├── model/                  # Admin logic (CRUD, competition)
+│   │   │   ├── AwardManagerModel.java
+│   │   │   ├── BookUploadModel.java
+│   │   │   ├── CategoryManagerModel.java
+│   │   │   ├── CompetitionManagerModel.java
+│   │   │   ├── NomineesManagerModel.java
+│   │   │   ├── PersonnelBookCatalogModel.java
+│   │   │   └── PersonnelDashboardModel.java
+│   │   └── view/                   # Admin GUI components
 │
-└── LibraryArchivesApplication.java → Main class
+│   └── utilities/                  # Shared utility classes/functions
+│
+└── LibraryArchivesApplication.java # Main application entry point
+
 
 ---
 
