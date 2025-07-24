@@ -23,48 +23,6 @@ The **Library Archives Application** is a Java-based system designed to manage a
 
 ---
 
-## 🗂️ Project Structure
-library_archive_application/
-│
-├── .idea/                          # IDE configuration files
-│
-├── res/                            # Resource files
-│   ├── .gitkeep                    # Placeholder for empty directory
-│   ├── book_test.csv               # Sample book data in CSV
-│   ├── book_test.txt               # Sample book data in text format
-│   └── teambach.sql                # SQL script for database schema
-│
-├── src/
-│   ├── databaseConnection/         # Database connectivity classes
-│
-│   ├── guest/                      # Guest user module
-│   │   ├── model/                  # Guest logic (viewing, voting)
-│   │   │   ├── GuestBookCatalogModel.java
-│   │   │   ├── GuestDashboardModel.java
-│   │   │   ├── RateManagerModel.java
-│   │   │   └── VoteSelectionModel.java
-│   │   └── view/                   # Guest GUI components
-│
-│   ├── login/                      # Login module
-│
-│   ├── personnel/                  # Admin (personnel) module
-│   │   ├── model/                  # Admin logic (CRUD, competition)
-│   │   │   ├── AwardManagerModel.java
-│   │   │   ├── BookUploadModel.java
-│   │   │   ├── CategoryManagerModel.java
-│   │   │   ├── CompetitionManagerModel.java
-│   │   │   ├── NomineesManagerModel.java
-│   │   │   ├── PersonnelBookCatalogModel.java
-│   │   │   └── PersonnelDashboardModel.java
-│   │   └── view/                   # Admin GUI components
-│
-│   └── utilities/                  # Shared utility classes/functions
-│
-└── LibraryArchivesApplication.java # Main application entry point
-
-
----
-
 ## 🛠️ Technologies Used
 
 - **Java (JDK 17+)**
